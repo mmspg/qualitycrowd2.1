@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Subjective Evaluation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>JPEG AI. Subjective Evaluation</h1>
+  <p>Crowdsourcing subjective visual quality evaluation</p>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <p>Welcome to the subjective evaluation!</p>
+      <p>We first need to check if your screen is suitable for this experiment.</p>
+      <p><b>Concider activating a fullscreen mode in your browser.</b></p>
+    </div>
+    <div class="col-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <h3>Screen Check</h3>
+      <table class="table table-bordered">
+       <thead>
+          <tr>
+            <th>Device&nbsp;Pixel&nbsp;Ratio</th>
+            <th>Screen&nbsp;Resolution</th>
+            <th>Available&nbsp;Resolution</th>
+            <th>Window&nbsp;Resolution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="devPixRatio">Unavailable</td>
+            <td id="screenRes">Unavailable</td>
+            <td id="availRes">Unavailable</td>
+            <td id="windowRes">Unavailable</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <p> Your screen must have a resolution of at least 1920x1080 and HiDPI
+         displays/modes (where logical pixels don’t correspond exactly to
+         the physical screen pixels) are not supported.</p>
+      <p>
+        <b>Instructions</b> on how to adjust your <b>screen settings</b> can be found in
+        <a href="/media/instructions-adjust-scale.pdf" target="_blank">this PDF document</a>.
+      </p>
+      <br>
+
+      <!-- <div class="form-group align-content-center">
+        <button type="button" class="btn btn-light">Proceed to the experiment</button>
+      </div> -->
+
+      <!-- <form> -->
+        <!-- <input type="hidden" name="devPixRatio" value="">
+        <input type="hidden" name="screenRes" value="">
+        <input type="hidden" name="availRes" value="">
+        <input type="hidden" name="windowRes" value=""> -->
+
+        <!-- <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" placeholder="Enter email" id="email">
+        </div> -->
+        <!-- <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div> -->
+        <!-- <button type="submit" class="btn btn-outline-secondary">Proceed</button> -->
+      <!-- </form> -->
+
+      <p>
+        <button id="gobutton" class="btn btn-outline-secondary">Proceed</button>
+      </p>
+
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  For any questions please contact Evgeniy&nbsp;Upenik (evgeniy.upenik@epfl.ch)
+</div>
+</body>
+</html>

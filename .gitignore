@@ -1,0 +1,11 @@
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+core/tmp
+data
+media
+batches
+
+.htaccess
+setup/disabled.php

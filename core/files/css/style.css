@@ -1,0 +1,233 @@
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:13px;
+  min-width: 1900px;
+}
+
+html {
+	margin:0;
+	background-color:#ccc;
+}
+
+body {
+  margin:0 0 0 0;
+  width: 100%;
+	background-color:white;
+}
+
+.token {
+	padding:10px;
+	font-size:16px;
+	font-family:monospace;
+	text-align:center;
+	background-color:#ccffcc;
+	width:200px;
+	border:2px solid;
+}
+
+.errormessage {
+	background-color:#ff7777;
+	padding:10px;
+	padding-left:30px;
+}
+
+.header {
+	background-color:#eee;
+	border-bottom: 2px solid #bbb;
+  margin:0 0 0 0;
+	padding:7px 15px;
+}
+
+.header-qualification {
+  margin:0 0 0 0;
+}
+
+.footer {
+	background-color:#eee;
+	border-top: 2px solid #bbb;
+  margin:0 0 0 0;
+	padding:7px 15px;
+  text-align:center;
+}
+
+.debugmessage {
+	font-weight: bold;
+	color: red;
+}
+
+.step {
+	margin-right:25px;
+}
+
+#timeout {
+	margin-left:25px;
+}
+
+.acitvityspinner {
+	margin-left:10px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+
+/* ========================================= FORMS */
+
+fieldset {
+  display: inline-block;
+	border: 1px dotted #888;
+	margin:15px 0;
+	padding:10px;
+}
+
+button {
+	font-size:14px;
+	padding:7px 20px;
+}
+
+textarea {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:14px;
+	width:755px;
+	height:100px;
+	padding:10px;
+}
+
+input[type="text"] {
+    display: block;
+    font-size: 13px;
+    padding: 5px;
+    width: 300px;
+    margin-bottom:3px;
+    margin-left:10px;
+
+}
+
+.radiooption {
+	display: inline-block;
+    padding-right:20px;
+}
+
+/* ========================================= PLAYER */
+
+div.video-box {
+	margin:1px auto;
+}
+
+.video-box * {
+	outline:0;
+}
+
+.videotitle {
+	margin-top:0;
+	margin-bottom:5px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.flash-fallback {
+	display:none;
+	padding:10px;
+	border: 1px solid red;
+}
+
+
+video {
+	background-color:#ccc;
+}
+
+.button {
+	width:24px;
+	height:24px;
+	background-image:url('../img/playerbuttons.png');
+	float:left;
+}
+
+.playbutton {
+	background-position:24px;
+}
+
+.pausebutton {
+	background-position:0px;
+}
+
+.progressbox {
+	margin-top:4px;
+	margin-left:10px;
+	float:right;
+	height:15px;
+	border:1px solid #444;
+	position:relative;
+}
+
+.progress {
+	width:0; height:100%;
+	background:#888;
+	z-index:10;
+	position:absolute;
+}
+
+.buffered {
+	width:0; height:100%;
+	background:#bbb;
+	position:absolute;
+	z-index:5;
+}
+
+.buftext {
+	font-size:10px;
+	padding-left:4px;
+	position:absolute;
+	z-index:20;
+	right:5px;
+}
+
+
+/* ========================================= SLIDER */
+
+.slider-area {
+	position:relative;
+	margin:10px;
+	padding:0;
+}
+
+.slider-box {
+	width:15px;
+	position:absolute;
+	top:0;
+	background-color:#ddd;
+	left:12px;
+}
+
+.slider-handle {
+	width:20px;
+	height:10px;
+	background-color: red;
+	border:1px solid #660000;
+	position:absolute;
+	cursor:row-resize;
+	left:8px;
+	border-radius:7px;
+}
+
+.slider-label {
+	position:absolute;
+	left:40px;
+	font-size:12px;
+}
+
+.slider-scale {
+	position:absolute;
+	border-bottom:1px solid #888;
+	width:32px;
+	height:0;
+	left:3px;
+}
+
+.slider-scale-end {
+	position:absolute;
+	border-bottom:2px solid #333;
+	width:40px;
+	height:0;
+}

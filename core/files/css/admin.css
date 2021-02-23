@@ -1,0 +1,412 @@
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:13px;
+}
+
+html {
+	margin:0;
+	background-color:#ccc;
+}
+
+body {
+	margin: 20px auto;
+	width:800px;
+	padding:0 15px;
+	background-color:white;
+}
+
+.successmessage {
+	background-color:#77ff77;
+	padding:10px;
+	padding-left:30px;
+}
+
+.header {
+	background-color:#eee;
+	border-bottom: 2px solid #bbb;
+	margin:0 -15px 15px -15px;
+	padding:7px 15px;
+}
+
+.footer {
+	background-color:#eee;
+	border-top: 2px solid #bbb;
+	margin:20px -15px 0 -15px;
+	padding:7px 15px;
+}
+
+pre {
+	background-color:#ddd;
+	padding:4px;
+}
+
+.steppreview {
+	padding:10px;
+	background-color:#FFFCE8;
+	border: 1px solid #9E8B00;
+}
+
+/* ==================================== Editor */
+
+.CodeMirror {
+	border: 1px solid #ccc;
+	height:auto;
+}
+
+/* ==================================== Form */
+
+form fieldset {
+	border: 1px dotted #888;
+	margin:15px 0;
+	padding:10px;
+}
+
+form legend {
+	padding:0 5px;
+}
+
+form label {
+    float: left;
+    width: 80px;
+    padding-top: 9px;
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom:5px;
+}
+
+form input, button, form select {
+    display: block;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form select {
+	-webkit-appearance: push-button;
+	border-radius: 3px;
+	-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+	background-image: url(../img/selectarrow.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+	border: 1px solid #AAA;
+	font-size: inherit;
+	overflow: hidden;
+	padding: 5px 8px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-width: 150px;
+}
+
+form button {
+	padding:7px 18px;
+	font-size: 14px;
+}
+
+/* ==================================== Menu */
+
+ul.menu {
+	margin:0;
+	margin-bottom:-7px;
+	padding:0;
+	list-style-type:none;
+}
+
+ul.menu li {
+	display:inline-block;
+	padding: 6px 15px;
+	background-color:#999;
+	margin-right:7px;
+}
+
+ul.menu li.active {
+	background-color:#444;
+}
+
+ul.menu li a {
+	text-decoration: none;
+	font-size:15px;
+	font-weight:bold;
+	color:#fff;
+	letter-spacing: 0.1em;
+}
+
+ul.submenu {
+	margin:-7px -15px 10px;
+	padding:0;
+	padding-left:15px;
+	list-style-type:none;
+	border-bottom:1px solid #888;
+}
+
+ul.submenu li {
+	display:inline-block;
+	padding: 3px 7px;
+	margin-right:7px;
+	border:1px solid #888;
+	border-bottom:none;
+	background-color:#eee;
+}
+
+ul.submenu li.active {
+	background-color:#aaa;
+}
+
+ul.submenu li a {
+	text-decoration: none;
+	font-size:13px;
+	color:#333;
+}
+
+/* ==================================== Meta Table */
+
+table.meta {
+	border-collapse:collapse;
+	border:1px solid #aaa;
+}
+
+table.meta tr:nth-child(2n) {
+	background-color:#ccc;
+}
+
+table.meta th {
+	padding:4px 15px;
+	text-align:left;
+}
+
+table.meta td {
+	padding:4px 15px;
+}
+
+/* ==================================== Step Table */
+
+table.steps {
+	border-collapse:collapse;
+	border:1px solid #aaa;
+}
+
+table.steps .step {
+	background-color:#ccc;
+	border-top:1px solid #888;
+}
+
+table.steps .element {
+	border-top:1px solid #666;
+	border-bottom: 1px dotted #888;
+}
+
+table.steps tr td {
+	padding:7px 15px;
+}
+
+table.steps .number {
+	font-size:35px;
+	vertical-align: top;
+}
+
+table.steps .command {
+	font-size:17px;
+	font-weight:bold;
+}
+
+table.steps tr.property {
+	border-bottom: 1px dotted #888;
+}
+
+table.steps tr.property td {
+	padding:4px 15px;
+}
+
+table.steps .property .property-key {
+	font-weight:bold;
+	padding-left:25px;
+}
+
+table.steps .property .property-key2 {
+	font-style: italic;
+}
+
+table.steps .preview {
+	text-align: right;
+}
+
+/* ==================================== Batch List */
+.batchlist {
+	border:1px solid #aaa;
+	list-style-type: none;
+	padding:0;
+}
+
+.batchrow {
+	padding:12px;
+	min-height:39px;
+}
+
+.batchrow:hover {
+	background-color:#333;
+}
+
+.batchrow:nth-child(2n) {
+	background-color:#ccc;
+}
+
+.batchrow:nth-child(2n):hover {
+	background-color:#333;
+}
+
+.batchrow a {
+	color:black;
+	text-decoration:none;
+}
+
+.batchrow:hover {
+	color:#eee;
+}
+
+.batchrow:hover a {
+	color:#eee;
+}
+
+.batchrow .id {
+	font-size:18px;
+}
+
+.batchrow .title {
+	font-size:12px;
+	margin-top:4px;
+}
+
+.batchrow .infofloat {
+	font-size:25px;
+	text-align:center;
+	margin-left:20px;
+	float:right;
+}
+
+.batchrow .infofloat:after {
+	display:block;
+	font-size:9px;
+	text-transform:uppercase;
+}
+
+.batchrow .steps:after {
+	content: "Steps";
+}
+
+.batchrow .workers:after {
+	content: "Workers";
+}
+
+.batchrow .finished:after {
+	content: "Finished";
+}
+
+.batchrow .state:after {
+	content: "State";
+}
+
+
+
+/* ==================================== Icons */
+
+div.icon {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+div.icon:after,
+div.icon:before {
+    border: 2px solid black;
+    content: '';
+    position: absolute;
+}
+
+.batchrow:hover div.icon:after,
+.batchrow:hover div.icon:before {
+	border: 2px solid white;
+}
+
+/* Edit Icon */
+
+div.icon-edit {
+    height: 26px;
+    width: 26px;
+}
+div.icon-edit:after {
+    height: 11px;
+    left: 6px;
+    top: 5px;
+    width:11px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    
+}
+
+div.icon-edit:before,
+.batchrow:hover div.icon-edit:before {
+	border: none;
+}
+
+/* Active Icon */
+
+div.icon-active {
+    height: 26px;
+    width: 26px;
+}
+div.icon-active:after {
+    border-bottom: 8px solid transparent;
+    border-left: 13px solid black;
+    border-right: 13px solid transparent;
+    border-top: 8px solid transparent;
+    height: 0;
+    left: 8px;
+    top: 5px;
+    width: 0;
+}
+
+.batchrow:hover div.icon-active:after {
+	border-bottom: 8px solid transparent;
+    border-left: 13px solid white;
+    border-right: 13px solid transparent;
+    border-top: 8px solid transparent;
+}
+
+div.icon-active:before,
+.batchrow:hover div.icon-active:before {
+    border: none;
+}
+
+/* Complete Icon */
+
+div.icon-post {
+    height: 26px;
+    width: 26px;
+}
+div.icon-post:after {
+    height: 14px;
+    left: 13px;
+    top: 5px;
+    width: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    
+}
+div.icon-post:before {
+	position:absolute;
+    height: 0;
+    left: 4px;
+    top: 14px;
+    width: 2px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
